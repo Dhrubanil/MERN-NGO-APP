@@ -1,12 +1,18 @@
 {
   "name": "serverside",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
+  "description": "react app",
+  "main": "app.js",
+  "engine":{
+    "node":"14.15.1",
+    "npm":"6.14.8"
+  },
+  "scripts" : {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "heroku-postbuild":"cd clientside && npm install && npm run build"
+    "start": "nodemon serverside/app.js",
+    "backend": "node serverside/app.js",
+    "frontend":"npm run front --prefix clientside",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix clientside && npm run build --prefix clientside"
   },
   "keywords": [],
   "author": "",

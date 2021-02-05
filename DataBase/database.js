@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URI || process.env.DataBase, {
+mongoose.connect(process.env.mongoatlas, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
