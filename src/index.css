@@ -1,13 +1,137 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Mulish";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2.4rem !important;
+  color: #110b81 !important;
+}
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.main_logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border-style: none;
+  margin-right: 15px;
+}
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #109b10;
+}
+.brand-name {
+  color: #3498db;
+}
+
+.navbar a:hover {
+  color: #3498db !important;
+}
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+#header h2 {
+  color: #484848;
+  font-size: 24px;
+}
+#header .btn_al {
+  border-radius: 30px !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  display: inline-block !important;
+  padding: 10px 30px !important;
+  border-radius: 50px !important;
+  transition: 0.5s !important;
+  color: #3498db !important;
+  border: 2px solid #3498db !important;
+  text-decoration: none !important;
+}
+#header .btn_al:hover {
+  background: #3498db !important;
+  color: #fff !important;
+}
+.home_div {
+  display: flex !important;
+  align-items: center !important;
+  margin-top: 100px !important;
+}
+.header-img {
+  text-align: right;
+}
+
+#header .animated {
+  border-radius: 50%;
+  height: 500px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+}
+.card1 {
+  color: #0161a1;
+}
+
+.cardimg {
+  height: 300px;
+  width: max-content;
+  border-radius: 20px !important;
+}
+@media (max-width: 991px) {
+  header {
+    height: 80vh;
+    text-align: center;
+  }
+  #header .header-img {
+    text-align: center;
+  }
+}
+
+.btn_al1 {
+  background-color: rgb(9, 92, 92) !important;
+  border-radius: 10px !important;
+}
+.btn_al1:hover {
+  background-color: rgb(219, 36, 149) !important;
+}
+
+.card_h1 {
+  border: 2px solid black !important;
+  border-radius: 20px !important;
+  border-style: none !important;
+  width: 350px;
+  margin-bottom: 30px !important;
+}
+.card_h1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11);
+}
+.font {
+  font-size: 3.5em !important;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
 }
